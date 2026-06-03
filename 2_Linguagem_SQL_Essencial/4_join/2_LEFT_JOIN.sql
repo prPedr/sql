@@ -9,5 +9,5 @@ SELECT
     produtos.status_produto
 FROM
     colaboradores
-INNER JOIN
+LEFT JOIN
     produtos ON colaboradores.id = produtos.id_colaborador
