@@ -1,5 +1,9 @@
 USE fullcycle;
 
-ALTER TABLE usuarios # Selecionar a tebala que deseja alterar
-ADD COLUMN tipo_usuario ENUM('Admin', 'Visualizar', 'Comum') # Adiconando uma nova coluna na tela com valor ENUM
-AFTER email_usuario # Adicionando a nova colula depois da coluna email_usuario
+ALTER TABLE colaboradores # Selecao da tabela desejada
+ADD COLUMN funcao_colaborador ENUM ('Assistente', 'Analista', 'Lider', 'Gerente') # Adicionando uma nova coluna
+AFTER email_colaborador; # A nova coluna será adicionando apos a coluna email_colaborador
+
+ALTER TABLE produtos
+ADD COLUMN marca_produto VARCHAR(50) NOT NULL
+AFTER nome_produto;
