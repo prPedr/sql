@@ -12,3 +12,8 @@ ALTER TABLE produtos
 -- Adicionando a coluna marca_produto após nome_produto
 ADD COLUMN marca_produto VARCHAR(50) NOT NULL
 AFTER nome_produto;
+
+ALTER TABLE produtos
+-- Adicionando a coluna quantidade após marca_produto
+ADD COLUNM quantidade INT NOT NULL DEFAULT 0
+AFTER marca_produto
