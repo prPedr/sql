@@ -15,5 +15,5 @@ AFTER nome_produto;
 
 ALTER TABLE produtos
 -- Adicionando a coluna quantidade após marca_produto
-ADD COLUNM quantidade INT NOT NULL DEFAULT 0
-AFTER marca_produto
+ADD COLUMN quantidade INT NOT NULL DEFAULT 0
+AFTER marca_produto;
